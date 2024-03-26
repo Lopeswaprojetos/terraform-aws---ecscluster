@@ -1,41 +1,34 @@
-variable "region" {
-  description = "A região da AWS onde os recursos serão provisionados."
-  type        = string
-  default     = "us-east-1"
+variable "central_vpc_name" {
+  description = "Nome da VPC"
+  default     = "central-vpc"
 }
 
-variable "vpc_cidr_block" {
-  description = "O bloco CIDR para a VPC."
-  type        = string
-  default     = "10.0.0.0/16"
+variable "sub_rede_publica_a_name" {
+  description = "Nome da sub-rede pública A"
+  default     = "sub-rede-publica_a"
 }
 
-variable "public_subnet_a_cidr_block" {
-  description = "O bloco CIDR para a sub-rede pública A."
-  type        = string
-  default     = "10.0.1.0/24"
+variable "sub_rede_publica_b_name" {
+  description = "Nome da sub-rede pública B"
+  default     = "sub-rede-publica_b"
 }
 
-variable "public_subnet_b_cidr_block" {
-  description = "O bloco CIDR para a sub-rede pública B."
-  type        = string
-  default     = "10.0.2.0/24"
+variable "internet_gateway_name" {
+  description = "Nome do gateway de internet"
+  default     = "internet-gateway"
 }
 
 variable "ecs_cluster_name" {
-  description = "O nome do cluster ECS."
-  type        = string
-  default     = "my-ecs-cluster"
+  description = "Nome do cluster ECS"
+  default     = "meu-cluster-ecs"
 }
 
-variable "lb_name" {
-  description = "O nome do Application Load Balancer (ALB)."
-  type        = string
-  default     = "my-alb"
+variable "alb_name" {
+  description = "Nome do balanceador de carga"
+  default     = "meu-alb"
 }
 
-variable "lb_ingress_cidr_blocks" {
-  description = "Os blocos CIDR permitidos para tráfego de entrada no ALB."
-  type        = list(string)
-  default     = ["0.0.0.0/0"]
+variable "lb_sg_name" {
+  description = "Nome do grupo de segurança para o ALB"
+  default     = "lb-sg"
 }
