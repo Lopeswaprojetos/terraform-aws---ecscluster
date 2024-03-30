@@ -1,3 +1,5 @@
+![Terraform - ECS](https://github.com/Lopeswaprojetos/terraform-aws---ecscluster/assets/161225187/6d9cb634-9e28-402a-9002-abe5bcdd0daa)
+
 
 ## Terraform AWS ECS Cluster
 
