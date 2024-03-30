@@ -9,13 +9,21 @@ Este projeto usa Terraform para provisionar uma infraestrutura básica na AWS pa
 Terraform instalado localmente.
 Credenciais válidas da AWS configuradas.
 
+
 ##Como usar
 Clone este repositório: git clone <URL_DO_REPOSITÓRIO>
+
 Navegue até o diretório clonado: cd terraform-aws-ecscluster
+
 Inicialize o diretório do Terraform:terraform init
+
 Visualize as alterações que serão feitas:terraform plan
+
 Aplique as alterações:terraform apply
+
 Após a conclusão da implantação, você pode encontrar as informações necessárias para acessar sua infraestrutura, como o DNS do ALB e outros detalhes relevantes, no console da AWS ou usando comandos do Terraform.
+
+
 
 ##Personalização
 Você pode personalizar esta infraestrutura de acordo com suas necessidades, ajustando os parâmetros no arquivo variables.tf.
